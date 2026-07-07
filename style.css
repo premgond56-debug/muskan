@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body is a softer black, center card vertically and horizontally */
+body {
+  background: #0f0f0f;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Card container with shadow/glow and rounded edges */
+.container {
+  background: #1c1c1c;
+  padding: 40px 30px;
+  border-radius: 15px;
+  max-width: 450px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(207, 33, 170, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+/* Profile Image: center, turquoise border, shadow, circle */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff00ee;
+  box-shadow: 0 0 0 7px #232323, 0 0 32px 4px rgb(160, 101, 140);
+  background: #191919;
+  margin-bottom: 30px;
+}
+
+/* Title: large and bold */
+.title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  letter-spacing: 1.5px;
+}
+
+/* Highlight: turquoise, large, emoji inline */
+.highlight {
+  color: #18e8d2;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.highlight .emoji {
+  font-size: 1.25rem;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+.desc {
+  color: #c2c2c2;
+  font-size: 1.05rem;
+  margin: 18px 0 18px 0;
+}
+
+/* Button: turquoise with black text, rounded, shadow, hover effect */
+.join-btn {
+  background: #f31690;
+  color: #181818;
+  font-size: 1.18rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  padding: 15px 40px;
+  margin-top: 15px;
+  box-shadow: 0 2px 16px rgba(22,243,226,0.39);
+  cursor: pointer;
+  transition: background 0.22s, color 0.22s;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  background: #0dd9c4;
+  color: #fff;
+}
+
+/* Footer: simple and small, accent color for link */
+/* ===== FOOTER STYLING ===== */
+
+.footer {
+    font-size: 0.9rem;
+    color: #ccc;              /* General footer text color */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Footer link text like “Xavier Ads” */
+.footer-link {
+    color: #f1f909;           /* <<< Change this color as you want */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Hover effect for the footer link */
+.footer-link:hover {
+    color: #d419d1;           /* Slightly brighter on hover */
+    text-decoration: underline;
+}
+
+/* If the footer contains <p> tags */
+.footer p {
+    margin: 0;
+    padding: 0;
+}
